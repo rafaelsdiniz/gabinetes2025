@@ -51,7 +51,7 @@ public class GabineteResource {
         return service.update(id, dto);
     }
 
-    @DELETE
+    @DELETE                                 
     @Path("/{id}")
     public void delete(@PathParam("id") Long id) {
         service.delete(id);
